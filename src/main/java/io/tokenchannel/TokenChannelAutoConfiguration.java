@@ -28,8 +28,8 @@ public class TokenChannelAutoConfiguration {
     @ConditionalOnMissingBean
     @Bean
     @Role(BeanDefinition.ROLE_INFRASTRUCTURE)
-    public TokenChannel tokenChannel(TokenChannelProperties tokenChannelProperties, Gson gson) {
-        return new TokenChannel(tokenChannelProperties, gson);
+    public TokenChannel tokenChannel(TokenChannelProperties tokenChannelProperties) {
+        return new TokenChannel(tokenChannelProperties);
     }
 
     @ConditionalOnMissingBean
@@ -38,11 +38,5 @@ public class TokenChannelAutoConfiguration {
     @Role(BeanDefinition.ROLE_INFRASTRUCTURE)
     public TokenChannelProperties tokenChannelProperties() {
         return new TokenChannelProperties();
-    }
-
-    @ConditionalOnMissingBean
-    @Bean
-    public Gson gson() {
-        return new Gson();
     }
 }

@@ -7,12 +7,12 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starters</artifactId>
-        <version>2.2.4.RELEASE</version>
+        <version>2.2.6.RELEASE</version>
     </parent>
 
     <groupId>io.tokenchannel</groupId>
     <artifactId>tokenchannel-java11-starter</artifactId>
-    <version>0.14-SNAPSHOT</version>
+    <version>0.16.RELEASE</version>
     <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -37,7 +37,7 @@
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
-        <tokenchannel-java11.version>0.14-SNAPSHOT</tokenchannel-java11.version>
+        <tokenchannel-java11.version>0.16.RELEASE</tokenchannel-java11.version>
     </properties>
 
     <scm>
@@ -61,10 +61,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
